@@ -35,11 +35,11 @@ $$X \in \mathrm{Mat}(M, I)$$
 
 where $I$ is the number of input neurons (in our case $I = 4$). For example,
 
-$$X = \begin{pmatrix} 1 & 2 & 7 & -4 \\ 2 & 1 & 2 & 1 \\ 8 & -2 & -7 & 0 \\ \vdots \end{pmatrix}$$
+$$X = \begin{pmatrix} 1 & 2 & 7 & -4 \newline 2 & 1 & 2 & 1 \newline 8 & -2 & -7 & 0 \newline \vdots \end{pmatrix}$$
 
 Now we must add the bias neuron. Recall that the bias neuron has the fixed value one and occupies the first (zeroth) position in the layer. Thus, we define an $M \times (I+1)$ matrix $\tilde{X}$, where the first entry of each input is one:
 
-$$\tilde{X} = \begin{pmatrix} 1 & 1 & 2 & 7 & -4 \\ 1 & 2 & 1 & 2 & 1 \\ 1 & 8 & -2 & -7 & 0 \\ \vdots \end{pmatrix}$$
+$$\tilde{X} = \begin{pmatrix} 1 & 1 & 2 & 7 & -4 \newline 1 & 2 & 1 & 2 & 1 \newline 1 & 8 & -2 & -7 & 0 \newline \vdots \end{pmatrix}$$
 
 With this notation, we can rewrite the previous expression for $z$ as
 
