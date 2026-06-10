@@ -1,7 +1,5 @@
-from turtle import up
 import numpy as np
 from scipy import optimize
-import matplotlib.pyplot as plt
 
 """
 Multiclass classification neural network.
@@ -52,6 +50,7 @@ class NeuralNetwork(object):
         self.NR_END = nr_end
         self.architecture = [nr_start, nr_end]
         self.LAMBDA = param_lambda
+        self.Theta = []
 
     """
     Adds a hidden Layer right before the output layer.
